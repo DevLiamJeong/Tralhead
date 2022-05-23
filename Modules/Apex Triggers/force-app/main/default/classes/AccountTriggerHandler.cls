@@ -30,7 +30,7 @@ public with sharing class AccountTriggerHandler {
         if (accounts != null) {
             
             for (Account acct : accounts) {
-                                
+                                                
                 setShippingPostalCode(acct);
 
             }

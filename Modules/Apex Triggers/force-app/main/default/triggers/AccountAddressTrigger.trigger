@@ -13,15 +13,14 @@ trigger AccountAddressTrigger on Account (before insert, before update
 ) { 
 
     switch on Trigger.OperationType {
+
         when  BEFORE_INSERT{
 
-            system.debug('Before Insert: ' + Trigger.new.size());            
             AccountTriggerHandler.beforeInsert(Trigger.new);
 
         }
         when  BEFORE_UPDATE{
-
-            system.debug('Before Update: ' + Trigger.new);
+            
             AccountTriggerHandler.beforeUpate(Trigger.new);            
 
         }        
@@ -39,7 +38,8 @@ trigger AccountAddressTrigger on Account (before insert, before update
         }
         when  AFTER_UNDELETE{
             
-        }        
+        }
+
     }
 
 }
