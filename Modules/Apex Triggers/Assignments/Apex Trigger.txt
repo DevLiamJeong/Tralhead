@@ -1,7 +1,7 @@
     TODO:
        Scenario 1.
            A custom field on the Opportunity object needs to be updated in real-time.
-           It shows how many Account records are related to the Opportunity record.
+           It shows how many Opportunity records are related to the parent Account record.
 
        Scenario 2.
            For Account, Opportunity objects,
