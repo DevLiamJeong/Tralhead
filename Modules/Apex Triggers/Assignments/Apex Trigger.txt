@@ -1,0 +1,17 @@
+    TODO:
+       Scenario 1.
+           A custom field on the Opportunity object needs to be updated in real-time.
+           It shows how many Account records are related to the Opportunity record.
+
+       Scenario 2.
+           For Account, Opportunity objects,
+           An end-user who submitted an approval cannot be the approver.
+
+       Scenario 3.
+           If there is a related Account record on an Opportunity record, It cannot be deleted.
+
+        Scenario 4.
+            If the current user's role is not CEO, they are not eligible for deleting any Account records.
+            
+	    Scenario 5.
+		    All IDs of saved Opportunities records should be preserved in a custom field of the Account object.
