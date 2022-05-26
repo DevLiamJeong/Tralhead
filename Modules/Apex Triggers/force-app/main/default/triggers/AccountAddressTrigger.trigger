@@ -1,8 +1,8 @@
 /**
  * @author  Liam Jeong
  * @since   2022-05-23
- ** @purpose  To pass Apex Triggers module in the Salesforce Trailhead
- ** @requirement
+ *? @purpose  To pass Apex Triggers module in the Salesforce Trailhead
+ *? @requirement
  **      1. Get Started with Apex Triggers
  *          Create an Apex trigger that sets an account’s Shipping Postal Code to match the Billing Postal Code 
  *          if the Match Billing Address option is selected. 
