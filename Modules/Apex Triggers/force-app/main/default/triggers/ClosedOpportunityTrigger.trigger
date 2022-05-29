@@ -7,8 +7,8 @@
  *          Create a bulkified Apex trigger that adds a follow-up task to an opportunity 
  *          if its stage is Closed Won. Fire the Apex trigger after inserting or updating an opportunity.
  */
-trigger ClosedOpportunityTrigger on Opportunity (after insert, after update
-                                                //before insert, before update,before delete, after delete, after undelete
+trigger ClosedOpportunityTrigger on Opportunity (before delete, after insert, after update
+                                                //before insert, before update, after delete, after undelete
                                                 ) {
 
     switch on Trigger.OperationType {
@@ -20,7 +20,7 @@ trigger ClosedOpportunityTrigger on Opportunity (after insert, after update
 
         }        
         when  BEFORE_DELETE{
-            
+            OpportunityTriggerHandler.beforeDelete(Trigger.oldMap);
         }
         when  AFTER_INSERT{
             System.debug('AFTER_INSERT');

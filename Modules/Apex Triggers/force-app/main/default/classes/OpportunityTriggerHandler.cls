@@ -8,8 +8,9 @@
  *          if its stage is Closed Won. Fire the Apex trigger after inserting or updating an opportunity.
  */
 public with sharing class OpportunityTriggerHandler {
+    //!=========================== MEMBER METHODS ===========================//
     /**
-     *? @params
+     * @params
      *      List of Opportunities
      *! @description
      *      If the stage is Closed Won,
@@ -39,16 +40,42 @@ public with sharing class OpportunityTriggerHandler {
         insert followUpTasks;                
 
     }
-    public static void afterInsert(Map<Id, Opportunity> oppsById){        
-        
-        System.debug('afterInsert(Trigger Handler): ' + oppsById.size());
-        createFollowUpTasks(oppsById.values());
+    /**
+     * @params
+     *      List of Opportunities
+     *! @description
+     *      If given Opportunity records have associated Account record,
+     *          it can't be deleted.
+     */
+    static void relatedToAccount(List<Opportunity> opps){
+
+        for (Opportunity opp : opps) {
+            
+            if (opp.AccountId != null) {
+                                
+                opp.addError('This opportunity CANNOT be deleted since it has  associated Account.\n' +
+                             'Please detach the Account record and try again.');
+
+            }
+
+        }
 
     }
-    public static void afterUpate(Map<Id, Opportunity> oppsById){        
+    
+    //!=========================== TRIGGER METHODS ===========================//
+    public static void beforeDelete(Map<Id, Opportunity> triggerOldMap){
+        
+        relatedToAccount(triggerOldMap.values());
 
-        System.debug('afterUpate(Trigger Handler): ' + oppsById.size());
-        createFollowUpTasks(oppsById.values());
+    }
+    public static void afterInsert(Map<Id, Opportunity> triggerNewMap){        
+                
+        createFollowUpTasks(triggerNewMap.values());
+
+    }
+    public static void afterUpate(Map<Id, Opportunity> triggerNewMap){        
+
+        createFollowUpTasks(triggerNewMap.values());
 
     }
 
