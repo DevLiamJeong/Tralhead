@@ -1,0 +1,604 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Feed Item ID",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Parent ID",
+      "name": "ParentId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "Event"
+      ],
+      "relationshipName": "Parent",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Feed Item Type",
+      "name": "Type",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tracked Change",
+          "validFor": null,
+          "value": "TrackedChange"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "User Status",
+          "validFor": null,
+          "value": "UserStatus"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Text Post",
+          "validFor": null,
+          "value": "TextPost"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Advanced Text Post",
+          "validFor": null,
+          "value": "AdvancedTextPost"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Link Post",
+          "validFor": null,
+          "value": "LinkPost"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Content Post",
+          "validFor": null,
+          "value": "ContentPost"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Poll",
+          "validFor": null,
+          "value": "PollPost"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "WDC Thanks",
+          "validFor": null,
+          "value": "RypplePost"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Profile Skill Post",
+          "validFor": null,
+          "value": "ProfileSkillPost"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Dashboard Component Snapshot",
+          "validFor": null,
+          "value": "DashboardComponentSnapshot"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Approval Post",
+          "validFor": null,
+          "value": "ApprovalPost"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Case Comment Feed",
+          "validFor": null,
+          "value": "CaseCommentPost"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Reply Post",
+          "validFor": null,
+          "value": "ReplyPost"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Email Message Feed",
+          "validFor": null,
+          "value": "EmailMessageEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Call Log Feed",
+          "validFor": null,
+          "value": "CallLogPost"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Status Feed",
+          "validFor": null,
+          "value": "ChangeStatusPost"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Attached Article",
+          "validFor": null,
+          "value": "AttachArticleEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Milestone Event",
+          "validFor": null,
+          "value": "MilestoneEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Activity Change",
+          "validFor": null,
+          "value": "ActivityEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chat Transcript Post",
+          "validFor": null,
+          "value": "ChatTranscriptPost"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Collaboration Group Created",
+          "validFor": null,
+          "value": "CollaborationGroupCreated"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Collaboration Group Reactivated",
+          "validFor": null,
+          "value": "CollaborationGroupUnarchived"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Social Post",
+          "validFor": null,
+          "value": "SocialPost"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Question Post",
+          "validFor": null,
+          "value": "QuestionPost"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Facebook Post",
+          "validFor": null,
+          "value": "FacebookPost"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Basic Template Post",
+          "validFor": null,
+          "value": "BasicTemplateFeedItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Created Record",
+          "validFor": null,
+          "value": "CreateRecordEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Canvas",
+          "validFor": null,
+          "value": "CanvasPost"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "a",
+          "validFor": null,
+          "value": "AnnouncementPost"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Created By ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created Date",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Deleted",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Modified Date",
+      "name": "LastModifiedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "System Modstamp",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Comment Count",
+      "name": "CommentCount",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Like Count",
+      "name": "LikeCount",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Title",
+      "name": "Title",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Body",
+      "name": "Body",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Link Url",
+      "name": "LinkUrl",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "url"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Is Rich Text",
+      "name": "IsRichText",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Related Record ID",
+      "name": "RelatedRecordId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "ContentVersion",
+        "WorkThanks"
+      ],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "InsertedBy ID",
+      "name": "InsertedById",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "InsertedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Best Comment ID",
+      "name": "BestCommentId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "FeedComment"
+      ],
+      "relationshipName": "BestComment",
+      "sortable": true,
+      "type": "reference"
+    }
+  ],
+  "label": "Event Feed",
+  "childRelationships": [
+    {
+      "cascadeDelete": true,
+      "childSObject": "FeedAttachment",
+      "deprecatedAndHidden": false,
+      "field": "FeedEntityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "FeedAttachments",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "FeedComment",
+      "deprecatedAndHidden": false,
+      "field": "FeedItemId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "FeedComments",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "FeedLike",
+      "deprecatedAndHidden": false,
+      "field": "FeedEntityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "FeedLike",
+      "deprecatedAndHidden": false,
+      "field": "FeedItemId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "FeedLikes",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "FeedPollChoice",
+      "deprecatedAndHidden": false,
+      "field": "FeedItemId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "FeedPollVote",
+      "deprecatedAndHidden": false,
+      "field": "FeedItemId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "FeedSignal",
+      "deprecatedAndHidden": false,
+      "field": "FeedEntityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "FeedSignal",
+      "deprecatedAndHidden": false,
+      "field": "FeedItemId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "FeedSignals",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "FeedTrackedChange",
+      "deprecatedAndHidden": false,
+      "field": "FeedItemId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "FeedTrackedChanges",
+      "restrictedDelete": false
+    }
+  ],
+  "custom": false,
+  "name": "EventFeed",
+  "queryable": true
+}

@@ -1,0 +1,346 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Contact Point Phone History ID",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Deleted",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Contact Point Phone ID",
+      "name": "ContactPointPhoneId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "ContactPointPhone"
+      ],
+      "relationshipName": "ContactPointPhone",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Created By ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created Date",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Changed Field",
+      "name": "Field",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active from Date",
+          "validFor": null,
+          "value": "ActiveFromDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active to Date",
+          "validFor": null,
+          "value": "ActiveToDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Area code",
+          "validFor": null,
+          "value": "AreaCode"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Best time to contact end time",
+          "validFor": null,
+          "value": "BestTimeToContactEndTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Best time to contact start time",
+          "validFor": null,
+          "value": "BestTimeToContactStartTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Best time to contact time zone",
+          "validFor": null,
+          "value": "BestTimeToContactTimezone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Created.",
+          "validFor": null,
+          "value": "created"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Extension number",
+          "validFor": null,
+          "value": "ExtensionNumber"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Feed event",
+          "validFor": null,
+          "value": "feedEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Formatted international phone number",
+          "validFor": null,
+          "value": "FormattedInternationalPhoneNumber"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Formatted national phone number",
+          "validFor": null,
+          "value": "FormattedNationalPhoneNumber"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Individual Merged",
+          "validFor": null,
+          "value": "individualMerged"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Is business phone",
+          "validFor": null,
+          "value": "IsBusinessPhone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Is fax capable",
+          "validFor": null,
+          "value": "IsFaxCapable"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Is personal phone",
+          "validFor": null,
+          "value": "IsPersonalPhone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Is Primary",
+          "validFor": null,
+          "value": "IsPrimary"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Is SMS capable",
+          "validFor": null,
+          "value": "IsSmsCapable"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Name",
+          "validFor": null,
+          "value": "Name"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Owner (Accepted)",
+          "validFor": null,
+          "value": "ownerAccepted"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Owner (Assignment)",
+          "validFor": null,
+          "value": "ownerAssignment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Owner Name",
+          "validFor": null,
+          "value": "Owner"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Parent",
+          "validFor": null,
+          "value": "Parent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Phone Type",
+          "validFor": null,
+          "value": "PhoneType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Preference Rank",
+          "validFor": null,
+          "value": "PreferenceRank"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Record locked.",
+          "validFor": null,
+          "value": "locked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Record unlocked.",
+          "validFor": null,
+          "value": "unlocked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Telephone number",
+          "validFor": null,
+          "value": "TelephoneNumber"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usage Type",
+          "validFor": null,
+          "value": "UsageType"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Old Value",
+      "name": "OldValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "New Value",
+      "name": "NewValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    }
+  ],
+  "label": "Contact Point Phone History",
+  "childRelationships": [],
+  "custom": false,
+  "name": "ContactPointPhoneHistory",
+  "queryable": true
+}

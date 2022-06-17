@@ -447,6 +447,16 @@
     },
     {
       "cascadeDelete": false,
+      "childSObject": "ContractLineItem",
+      "deprecatedAndHidden": false,
+      "field": "Product2Id",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ContractLineItems",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
       "childSObject": "EmailMessage",
       "deprecatedAndHidden": false,
       "field": "RelatedToId",
@@ -646,6 +656,16 @@
       "restrictedDelete": false
     },
     {
+      "cascadeDelete": false,
+      "childSObject": "ProductEntitlementTemplate",
+      "deprecatedAndHidden": false,
+      "field": "Product2Id",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
       "cascadeDelete": true,
       "childSObject": "RecordAction",
       "deprecatedAndHidden": false,
@@ -683,6 +703,16 @@
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "WorkOrderLineItem",
+      "deprecatedAndHidden": false,
+      "field": "Product2Id",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "WorkOrderLineItems",
       "restrictedDelete": false
     }
   ],

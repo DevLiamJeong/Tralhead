@@ -250,3 +250,23 @@ declare module "@salesforce/schema/Lead.IndividualId" {
   const IndividualId:any;
   export default IndividualId;
 }
+declare module "@salesforce/schema/Lead.SICCode__c" {
+  const SICCode__c:string;
+  export default SICCode__c;
+}
+declare module "@salesforce/schema/Lead.ProductInterest__c" {
+  const ProductInterest__c:string;
+  export default ProductInterest__c;
+}
+declare module "@salesforce/schema/Lead.Primary__c" {
+  const Primary__c:string;
+  export default Primary__c;
+}
+declare module "@salesforce/schema/Lead.CurrentGenerators__c" {
+  const CurrentGenerators__c:string;
+  export default CurrentGenerators__c;
+}
+declare module "@salesforce/schema/Lead.NumberofLocations__c" {
+  const NumberofLocations__c:number;
+  export default NumberofLocations__c;
+}

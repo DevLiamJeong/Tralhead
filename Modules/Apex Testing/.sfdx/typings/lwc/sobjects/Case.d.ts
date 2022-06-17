@@ -170,3 +170,19 @@ declare module "@salesforce/schema/Case.LastReferencedDate" {
   const LastReferencedDate:any;
   export default LastReferencedDate;
 }
+declare module "@salesforce/schema/Case.EngineeringReqNumber__c" {
+  const EngineeringReqNumber__c:string;
+  export default EngineeringReqNumber__c;
+}
+declare module "@salesforce/schema/Case.SLAViolation__c" {
+  const SLAViolation__c:string;
+  export default SLAViolation__c;
+}
+declare module "@salesforce/schema/Case.Product__c" {
+  const Product__c:string;
+  export default Product__c;
+}
+declare module "@salesforce/schema/Case.PotentialLiability__c" {
+  const PotentialLiability__c:string;
+  export default PotentialLiability__c;
+}

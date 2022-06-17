@@ -174,3 +174,23 @@ declare module "@salesforce/schema/Opportunity.HasOverdueTask" {
   const HasOverdueTask:boolean;
   export default HasOverdueTask;
 }
+declare module "@salesforce/schema/Opportunity.DeliveryInstallationStatus__c" {
+  const DeliveryInstallationStatus__c:string;
+  export default DeliveryInstallationStatus__c;
+}
+declare module "@salesforce/schema/Opportunity.TrackingNumber__c" {
+  const TrackingNumber__c:string;
+  export default TrackingNumber__c;
+}
+declare module "@salesforce/schema/Opportunity.OrderNumber__c" {
+  const OrderNumber__c:string;
+  export default OrderNumber__c;
+}
+declare module "@salesforce/schema/Opportunity.CurrentGenerators__c" {
+  const CurrentGenerators__c:string;
+  export default CurrentGenerators__c;
+}
+declare module "@salesforce/schema/Opportunity.MainCompetitors__c" {
+  const MainCompetitors__c:string;
+  export default MainCompetitors__c;
+}

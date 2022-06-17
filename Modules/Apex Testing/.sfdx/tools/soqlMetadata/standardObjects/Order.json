@@ -1448,6 +1448,16 @@
       "junctionReferenceTo": [],
       "relationshipName": "TopicAssignments",
       "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "WorkOrderLineItem",
+      "deprecatedAndHidden": false,
+      "field": "OrderId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "WorkOrderLineItems",
+      "restrictedDelete": false
     }
   ],
   "custom": false,

@@ -490,14 +490,6 @@ declare module "@salesforce/schema/User.UserPreferencesShowCountryToGuestUsers" 
   const UserPreferencesShowCountryToGuestUsers:boolean;
   export default UserPreferencesShowCountryToGuestUsers;
 }
-declare module "@salesforce/schema/User.UserPreferencesDisableFeedbackEmail" {
-  const UserPreferencesDisableFeedbackEmail:boolean;
-  export default UserPreferencesDisableFeedbackEmail;
-}
-declare module "@salesforce/schema/User.UserPreferencesDisableWorkEmail" {
-  const UserPreferencesDisableWorkEmail:boolean;
-  export default UserPreferencesDisableWorkEmail;
-}
 declare module "@salesforce/schema/User.UserPreferencesPipelineViewHideHelpPopover" {
   const UserPreferencesPipelineViewHideHelpPopover:boolean;
   export default UserPreferencesPipelineViewHideHelpPopover;

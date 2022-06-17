@@ -1,0 +1,447 @@
+{
+  "fields": [
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Flow Definition View ID",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Durable ID",
+      "name": "DurableId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Flow API Name",
+      "name": "ApiName",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Flow Label",
+      "name": "Label",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Flow Description",
+      "name": "Description",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Process Type",
+      "name": "ProcessType",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Autolaunched Flow",
+          "validFor": null,
+          "value": "AutoLaunchedFlow"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Screen Flow",
+          "validFor": null,
+          "value": "Flow"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Record Change Process",
+          "validFor": null,
+          "value": "Workflow"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Platform Event Process",
+          "validFor": null,
+          "value": "CustomEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Invocable Process",
+          "validFor": null,
+          "value": "InvocableProcess"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Login Flow",
+          "validFor": null,
+          "value": "LoginFlow"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Action Plan",
+          "validFor": null,
+          "value": "ActionPlan"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Journey Builder Integration",
+          "validFor": null,
+          "value": "JourneyBuilderIntegration"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "User Provisioning Flow",
+          "validFor": null,
+          "value": "UserProvisioningFlow"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Survey",
+          "validFor": null,
+          "value": "Survey"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Survey Enrich Flow",
+          "validFor": null,
+          "value": "SurveyEnrich"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Salesforce Scheduler Flow",
+          "validFor": null,
+          "value": "Appointments"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mortgage Flow",
+          "validFor": null,
+          "value": "FSCLending"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Digital Form Flow",
+          "validFor": null,
+          "value": "DigitalForm"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Field Service Mobile Flow",
+          "validFor": null,
+          "value": "FieldServiceMobile"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Orchestration Flow",
+          "validFor": null,
+          "value": "OrchestrationFlow"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Embedded Appointment Management Flow",
+          "validFor": null,
+          "value": "FieldServiceWeb"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Transaction Security Flow",
+          "validFor": null,
+          "value": "TransactionSecurityFlow"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contact Request Flow",
+          "validFor": null,
+          "value": "ContactRequestFlow"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sales Cadence Flow",
+          "validFor": null,
+          "value": "ActionCadenceFlow"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Managed Content Flow",
+          "validFor": null,
+          "value": "ManagedContentFlow"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Checkout Flow",
+          "validFor": null,
+          "value": "CheckoutFlow"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Cart Async Flow",
+          "validFor": null,
+          "value": "CartAsyncFlow"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Customer Lifecycle Flow",
+          "validFor": null,
+          "value": "CustomerLifecycle"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Journey OSL Flow",
+          "validFor": null,
+          "value": "Journey"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recommendation Strategy",
+          "validFor": null,
+          "value": "RecommendationStrategy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Orchestrator",
+          "validFor": null,
+          "value": "Orchestrator"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Omni-Channel Flow",
+          "validFor": null,
+          "value": "RoutingFlow"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Employee Service Catalog Item Flow",
+          "validFor": null,
+          "value": "ServiceCatalogItemFlow"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Evaluation Flow",
+          "validFor": null,
+          "value": "EvaluationFlow"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Loyalty Management Flow",
+          "validFor": null,
+          "value": "LoyaltyManagementFlow"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Flow Orchestrator for CMS",
+          "validFor": null,
+          "value": "CMSOrchestrator"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Trigger",
+      "name": "TriggerType",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Scheduled"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "RecordBeforeSave"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Flow Namespace",
+      "name": "NamespacePrefix",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Active Flow Version API Name or ID",
+      "name": "ActiveVersionId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Latest Flow Version API Name or ID",
+      "name": "LatestVersionId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Trigger Order",
+      "name": "TriggerOrder",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    }
+  ],
+  "label": "Flow Definition",
+  "childRelationships": [
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowVersionView",
+      "deprecatedAndHidden": false,
+      "field": "FlowDefinitionViewId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Versions",
+      "restrictedDelete": false
+    }
+  ],
+  "custom": false,
+  "name": "FlowDefinitionView",
+  "queryable": true
+}

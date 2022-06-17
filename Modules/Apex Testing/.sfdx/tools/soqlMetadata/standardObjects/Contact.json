@@ -1301,6 +1301,62 @@
       "relationshipName": "Individual",
       "sortable": true,
       "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Level",
+      "name": "Level__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Secondary",
+          "validFor": null,
+          "value": "Secondary"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tertiary",
+          "validFor": null,
+          "value": "Tertiary"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Primary",
+          "validFor": null,
+          "value": "Primary"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Languages",
+      "name": "Languages__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
     }
   ],
   "label": "Contact",
@@ -1657,6 +1713,16 @@
     },
     {
       "cascadeDelete": true,
+      "childSObject": "EntitlementContact",
+      "deprecatedAndHidden": false,
+      "field": "ContactId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "EntitlementContacts",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
       "childSObject": "EntitySubscription",
       "deprecatedAndHidden": false,
       "field": "ParentId",
@@ -1966,6 +2032,26 @@
       "restrictedDelete": false
     },
     {
+      "cascadeDelete": false,
+      "childSObject": "ServiceContract",
+      "deprecatedAndHidden": false,
+      "field": "ContactId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ServiceContracts",
+      "restrictedDelete": true
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ServiceContractChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "ContactId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
       "cascadeDelete": true,
       "childSObject": "Task",
       "deprecatedAndHidden": false,
@@ -2033,6 +2119,16 @@
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": "PersonRecord",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "WorkOrder",
+      "deprecatedAndHidden": false,
+      "field": "ContactId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "WorkOrders",
       "restrictedDelete": false
     }
   ],

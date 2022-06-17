@@ -71,6 +71,13 @@ global class Account {
     global String SicDesc;
     global DandBCompany DandbCompany;
     global Id DandbCompanyId;
+    global String CustomerPriority__c;
+    global String SLA__c;
+    global String Active__c;
+    global Double NumberofLocations__c;
+    global String UpsellOpportunity__c;
+    global String SLASerialNumber__c;
+    global Date SLAExpirationDate__c;
     global List<Account> ChildAccounts;
     global List<AccountCleanInfo> AccountCleanInfos;
     global List<AccountContactRole> AccountContactRoles;
@@ -83,6 +90,7 @@ global class Account {
     global List<Asset> Assets;
     global List<Asset> ProvidedAssets;
     global List<Asset> ServicedAssets;
+    global List<AssociatedLocation> AssociatedLocations;
     global List<AttachedContentDocument> AttachedContentDocuments;
     global List<Attachment> Attachments;
     global List<Case> Cases;
@@ -96,6 +104,7 @@ global class Account {
     global List<Contract> Contracts;
     global List<DuplicateRecordItem> DuplicateRecordItems;
     global List<EmailMessage> Emails;
+    global List<Entitlement> Entitlements;
     global List<EntitySubscription> FeedSubscriptionsForEntity;
     global List<Event> Events;
     global List<Note> Notes;
@@ -110,9 +119,11 @@ global class Account {
     global List<ProcessInstanceHistory> ProcessSteps;
     global List<RecordAction> RecordActions;
     global List<RecordActionHistory> RecordActionHistories;
+    global List<ServiceContract> ServiceContracts;
     global List<Task> Tasks;
     global List<TopicAssignment> TopicAssignments;
     global List<User> Users;
+    global List<WorkOrder> WorkOrders;
     global List<AccountChangeEvent> Parent;
     global List<AccountContactRoleChangeEvent> Account;
     global List<AssetChangeEvent> AssetProvidedBy;
@@ -129,7 +140,7 @@ global class Account {
     global List<Lead> ConvertedAccount;
     global List<OpportunityChangeEvent> Account;
     global List<OutgoingEmail> RelatedTo;
-    global List<Task> Account;
+    global List<ServiceContractChangeEvent> Account;
     global List<TaskChangeEvent> What;
     global List<UserChangeEvent> Account;
     global List<UserRole> PortalAccount;

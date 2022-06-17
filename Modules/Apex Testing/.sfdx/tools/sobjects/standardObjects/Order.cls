@@ -94,6 +94,7 @@ global class Order {
     global List<RecordActionHistory> RecordActionHistories;
     global List<Task> Tasks;
     global List<TopicAssignment> TopicAssignments;
+    global List<WorkOrderLineItem> WorkOrderLineItems;
     global List<ContentVersion> FirstPublishLocation;
     global List<EventChangeEvent> What;
     global List<EventRelationChangeEvent> Relation;

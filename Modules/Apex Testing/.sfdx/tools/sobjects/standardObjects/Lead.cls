@@ -70,6 +70,11 @@ global class Lead {
     global Datetime EmailBouncedDate;
     global Individual Individual;
     global Id IndividualId;
+    global String SICCode__c;
+    global String ProductInterest__c;
+    global String Primary__c;
+    global String CurrentGenerators__c;
+    global Double NumberofLocations__c;
     global List<AcceptedEventRelation> AcceptedEventRelations;
     global List<ActivityHistory> ActivityHistories;
     global List<AttachedContentDocument> AttachedContentDocuments;

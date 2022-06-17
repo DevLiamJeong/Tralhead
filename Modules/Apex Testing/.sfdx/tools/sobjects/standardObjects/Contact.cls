@@ -73,6 +73,8 @@ global class Contact {
     global String CleanStatus;
     global Individual Individual;
     global Id IndividualId;
+    global String Level__c;
+    global String Languages__c;
     global List<AcceptedEventRelation> AcceptedEventRelations;
     global List<AccountContactRole> AccountContactRoles;
     global List<ActivityHistory> ActivityHistories;
@@ -96,6 +98,7 @@ global class Contact {
     global List<DuplicateRecordItem> DuplicateRecordItems;
     global List<EmailMessageRelation> EmailMessageRelations;
     global List<EmailStatus> EmailStatuses;
+    global List<EntitlementContact> EntitlementContacts;
     global List<EntitySubscription> FeedSubscriptionsForEntity;
     global List<Event> Events;
     global List<EventRelation> EventRelations;
@@ -110,11 +113,13 @@ global class Contact {
     global List<ProcessInstanceHistory> ProcessSteps;
     global List<RecordAction> RecordActions;
     global List<RecordActionHistory> RecordActionHistories;
+    global List<ServiceContract> ServiceContracts;
     global List<Task> Tasks;
     global List<TopicAssignment> TopicAssignments;
     global List<UndecidedEventRelation> UndecidedEventRelations;
     global List<User> Users;
     global List<UserEmailPreferredPerson> PersonRecord;
+    global List<WorkOrder> WorkOrders;
     global List<AccountContactRoleChangeEvent> Contact;
     global List<CampaignMember> LeadOrContact;
     global List<CampaignMemberChangeEvent> Contact;
@@ -137,6 +142,8 @@ global class Contact {
     global List<OrderChangeEvent> CustomerAuthorizedBy;
     global List<OrderChangeEvent> ShipToContact;
     global List<OutgoingEmail> Who;
+    global List<ServiceContractChangeEvent> Contact;
+    global List<TaskChangeEvent> Who;
     global List<UserChangeEvent> Contact;
 
     global Contact () 

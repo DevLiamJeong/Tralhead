@@ -1,0 +1,339 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Content Version ID",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Deleted",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ContentVersion ID",
+      "name": "ContentVersionId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "ContentVersion"
+      ],
+      "relationshipName": "ContentVersion",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Created By ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created Date",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Changed Field",
+      "name": "Field",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Content URL",
+          "validFor": null,
+          "value": "ContentUrl"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Created.",
+          "validFor": null,
+          "value": "created"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Description",
+          "validFor": null,
+          "value": "Description"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "External Data Source",
+          "validFor": null,
+          "value": "ExternalDataSource"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "External Document Info1",
+          "validFor": null,
+          "value": "ExternalDocumentInfo1"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "External Document Info2",
+          "validFor": null,
+          "value": "ExternalDocumentInfo2"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Feed event",
+          "validFor": null,
+          "value": "feedEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "File Privacy on Records",
+          "validFor": null,
+          "value": "SharingPrivacy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Individual Merged",
+          "validFor": null,
+          "value": "individualMerged"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Language",
+          "validFor": null,
+          "value": "Language"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Major Version",
+          "validFor": null,
+          "value": "IsMajorVersion"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Owner",
+          "validFor": null,
+          "value": "Owner"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Owner (Accepted)",
+          "validFor": null,
+          "value": "ownerAccepted"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Owner (Assignment)",
+          "validFor": null,
+          "value": "ownerAssignment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Prevent others from sharing and unsharing",
+          "validFor": null,
+          "value": "SharingOption"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Reason For Change",
+          "validFor": null,
+          "value": "ReasonForChange"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Record locked.",
+          "validFor": null,
+          "value": "locked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Record unlocked.",
+          "validFor": null,
+          "value": "unlocked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Title",
+          "validFor": null,
+          "value": "Title"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Version Commented",
+          "validFor": null,
+          "value": "contentVersionCommented"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Version Created",
+          "validFor": null,
+          "value": "contentVersionCreated"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Version Data Replaced",
+          "validFor": null,
+          "value": "contentVersionDataReplaced"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Version Deleted",
+          "validFor": null,
+          "value": "contentVersionDeleted"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Version Downloaded",
+          "validFor": null,
+          "value": "contentVersionDownloaded"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Version Rated",
+          "validFor": null,
+          "value": "contentVersionRated"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Version Updated",
+          "validFor": null,
+          "value": "contentVersionUpdated"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Version Viewed",
+          "validFor": null,
+          "value": "contentVersionViewed"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Old Value",
+      "name": "OldValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "New Value",
+      "name": "NewValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    }
+  ],
+  "label": "Content Version History",
+  "childRelationships": [],
+  "custom": false,
+  "name": "ContentVersionHistory",
+  "queryable": true
+}

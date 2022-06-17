@@ -23,6 +23,7 @@ global class RecordType {
     global Id LastModifiedById;
     global Datetime LastModifiedDate;
     global Datetime SystemModstamp;
+    global List<RecordTypeLocalization> Localization;
     global List<Campaign> CampaignMemberRecordType;
     global List<ContentWorkspace> DefaultRecordType;
     global List<Name> RecordType;

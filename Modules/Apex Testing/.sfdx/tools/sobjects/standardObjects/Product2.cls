@@ -36,6 +36,7 @@ global class Product2 {
     global List<Attachment> Attachments;
     global List<CombinedAttachment> CombinedAttachments;
     global List<ContentDocumentLink> ContentDocumentLinks;
+    global List<ContractLineItem> ContractLineItems;
     global List<EmailMessage> Emails;
     global List<EntitySubscription> FeedSubscriptionsForEntity;
     global List<Event> Events;
@@ -51,6 +52,7 @@ global class Product2 {
     global List<RecordAction> RecordActions;
     global List<RecordActionHistory> RecordActionHistories;
     global List<Task> Tasks;
+    global List<WorkOrderLineItem> WorkOrderLineItems;
     global List<AssetChangeEvent> Product2;
     global List<ContentVersion> FirstPublishLocation;
     global List<EventChangeEvent> What;
@@ -59,6 +61,7 @@ global class Product2 {
     global List<FlowRecordRelation> RelatedRecord;
     global List<OpportunityLineItem> Product2;
     global List<OutgoingEmail> RelatedTo;
+    global List<ProductEntitlementTemplate> Product2;
     global List<TaskChangeEvent> What;
 
     global Product2 () 

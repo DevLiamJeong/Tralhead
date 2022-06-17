@@ -770,6 +770,168 @@
       "relationshipName": null,
       "sortable": true,
       "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Engineering Req Number",
+      "name": "EngineeringReqNumber__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "SLA Violation",
+      "name": "SLAViolation__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "No",
+          "validFor": null,
+          "value": "No"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Yes",
+          "validFor": null,
+          "value": "Yes"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Product",
+      "name": "Product__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GC1040",
+          "validFor": null,
+          "value": "GC1040"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GC1060",
+          "validFor": null,
+          "value": "GC1060"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GC3020",
+          "validFor": null,
+          "value": "GC3020"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GC3040",
+          "validFor": null,
+          "value": "GC3040"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GC3060",
+          "validFor": null,
+          "value": "GC3060"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GC5020",
+          "validFor": null,
+          "value": "GC5020"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GC5040",
+          "validFor": null,
+          "value": "GC5040"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GC5060",
+          "validFor": null,
+          "value": "GC5060"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GC1020",
+          "validFor": null,
+          "value": "GC1020"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Potential Liability",
+      "name": "PotentialLiability__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "No",
+          "validFor": null,
+          "value": "No"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Yes",
+          "validFor": null,
+          "value": "Yes"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
     }
   ],
   "label": "Case",
@@ -862,6 +1024,16 @@
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": "Histories",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "CaseMilestone",
+      "deprecatedAndHidden": false,
+      "field": "CaseId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "CaseMilestones",
       "restrictedDelete": false
     },
     {
@@ -1132,6 +1304,16 @@
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": "TopicAssignments",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "WorkOrder",
+      "deprecatedAndHidden": false,
+      "field": "CaseId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "WorkOrders",
       "restrictedDelete": false
     }
   ],
